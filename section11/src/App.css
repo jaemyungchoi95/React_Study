@@ -1,0 +1,8 @@
+.App {
+    width: 500px;
+    margin: 0 auto;
+
+    display: flex; /* flex는 요소들의 배치를 가장 유연하게 할 수 있도록 도와주기 때문에, 현대 CSS에서 가장 많이 쓰인다. */
+    flex-direction: column; /* flex의 정렬을 세로로 할 수 있도록 한다. */
+    gap: 10px; /* display가 flex일때만 사용 가능하며, 요소 사이의 간격을 벌려준다. */
+}
