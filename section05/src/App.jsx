@@ -7,6 +7,7 @@ import { useState } from 'react';
 // import Bulb from './components/Bulb';
 // import Counter from './components/Counter';
 import Register from './components/Register';
+import HookExam from './components/HookExam';
 
 // 기본적인 함수 컴포넌트 외에도 아래와 같이 화살표 함수로 컴포넌트를 만들 수 있다.
 // export const Header = () => { // 자식 컴포넌트
@@ -51,7 +52,7 @@ function App() { // 부모 컴포넌트
 
   return (
     <>
-      <Register />
+      <HookExam />
     </>
   )
 }
