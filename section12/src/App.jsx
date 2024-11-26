@@ -7,12 +7,6 @@ import New from './pages/New'
 import Edit from './pages/Edit'
 import NotFound from './pages/NotFound'
 
-import Button from './components/Button'
-import Header from './components/Header'
-
-
-import { getEmotionImage } from './util/get-emotion-image'
-
 const mockData = [
   { 
     id: 1,
