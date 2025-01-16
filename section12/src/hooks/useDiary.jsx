@@ -21,7 +21,7 @@ const useDiary = (id) => {
             nav("/", { replace: true });
         };
         setCurDiaryItem(currentDiaryItem);
-    }, [id, data]); 
+    }, [id]); 
 
     return curDiaryItem;
 };

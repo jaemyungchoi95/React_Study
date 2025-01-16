@@ -5,11 +5,14 @@ import { DiaryDispatchContext } from "../App";
 import Header from "../components/Header";
 import Editor from "../components/Editor";
 import Button from "../components/Button";
+import usePageTitle from "../hooks/usePageTitle";
 
 
 const New = () => {
     const { onCreate } = useContext(DiaryDispatchContext);
     const nav = useNavigate();
+
+    usePageTitle("새 일기 쓰기");
 
     const onSubmit = (input) => {
         onCreate(

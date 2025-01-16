@@ -4,12 +4,15 @@ import Button from "../components/Button";
 import Viewer from "../components/Viewer";
 import useDiary from "../hooks/useDiary";
 import { getStringedDate } from "../util/get-stringed-date";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Diary = () => {
     const params = useParams();
     const nav = useNavigate();
 
     const curDiaryItem = useDiary(params.id);
+
+    usePageTitle(`${params.id}번 일기`);
     
     // 만약 curDiaryItem이 undefined이면 아래와 같은 문구 출력
     if (!curDiaryItem) {
